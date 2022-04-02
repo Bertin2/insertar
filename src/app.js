@@ -18,11 +18,11 @@ app.set('views', path.join(__dirname, 'views'))
 //middlewares
 app.use(morgan('start'));
 app.use(myConnection(mysql, {
-    host: 'localhost',
-    user: 'root',
-    password: '',
+    host: 'us-cdbr-east-05.cleardb.net',
+    user: 'b66f0666d216b4',
+    password: '76e003f1',
     port: '3306',
-    database: 'crudnodejsmysql'
+    database: 'heroku_33dd528d1621b84'
 }, 'single'));
 app.use(express.urlencoded({extended: false}));
 
